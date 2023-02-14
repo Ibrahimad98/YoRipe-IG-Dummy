@@ -83,7 +83,9 @@ export default function Profilebar() {
                     </div>
                     <div className="col-2 d-flex align-items-center" style={{}}>
                       <a href="#" style={{ textDecoration: "none" }}>
-                        <p style={{ fontSize: "13px" }}>Follow</p>
+                        <p style={{ fontSize: "13px" }}>
+                          <strong>Follow</strong>
+                        </p>
                       </a>
                     </div>
                   </div>

@@ -34,5 +34,22 @@ export default function Storybar() {
     },
   ]);
 
-  return <div></div>;
+  return (
+    <>
+      <div className="d-flex align-items-center justify-content-evenly">
+        {story.map((el) => {
+          return (
+            <a href="#" style={{ textDecoration: "none" }}>
+              <div className="text-center">
+                <img src={el.imgUrl} style={{ height: "70px", width: "70px", borderRadius: "50px", boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)", overflow: "hidden" }} />
+                <p className="mt-2 solid" style={{ fontSize: "12px", fontWeight: "bold", color: "black" }}>
+                  {el.userName}
+                </p>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </>
+  );
 }
